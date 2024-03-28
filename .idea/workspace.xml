@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bf51d28-fc29-4602-9687-ff867084f4de" name="Changes" comment="implementacion horario">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Restaurante/Restaurante.py" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurante/Restaurante.py" afterDir="false" />
+    <list default="true" id="0bf51d28-fc29-4602-9687-ff867084f4de" name="Changes" comment="arreglos">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711648142071</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="arreglos">
+      <option name="closed" value="true" />
+      <created>1711651395408</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711651395408</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -128,6 +135,7 @@
     <MESSAGE value="avance x2" />
     <MESSAGE value="avance en el proyecto" />
     <MESSAGE value="implementacion horario" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementacion horario" />
+    <MESSAGE value="arreglos" />
+    <option name="LAST_COMMIT_MESSAGE" value="arreglos" />
   </component>
 </project>
