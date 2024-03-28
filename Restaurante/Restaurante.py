@@ -55,11 +55,11 @@ class Mesero:
         return self.dia_descanso_personalizado == dia
 
     def incrementar_horas_trabajadas(self, dia: str, turno: str):
-
         horas_turno = turno.count("-") + 1
         self.horas_trabajadas[dia] += horas_turno
 
     def reiniciar_horas_trabajadas(self):
+        # Reiniciar las horas trabajadas para la siguiente semana
         self.horas_trabajadas = {dia: 0 for dia in self.horas_trabajadas}
 
 
@@ -73,4 +73,4 @@ restaurante.asignar_descanso_personalizado("Edison", "Viernes")
 restaurante.asignar_descanso_personalizado("Alejandro", "Miércoles")
 
 # Mostrar horarios
-restaurante.mostrar_horarios()
+restaurante.generar_horarios()
