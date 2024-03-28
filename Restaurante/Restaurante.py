@@ -1,15 +1,3 @@
-class Mesero:
-    def __init__(self, nombre: str):
-        self.nombre = nombre
-        self.dia_descanso_personalizado = None
-
-    def asignar_descanso_personalizado(self, dia_descanso: str):
-        self.dia_descanso_personalizado = dia_descanso
-
-    def tiene_dia_descanso_personalizado(self, dia: str):
-        return self.dia_descanso_personalizado == dia
-
-
 class Restaurante:
     def __init__(self):
         self.meseros = []
@@ -26,25 +14,53 @@ class Restaurante:
                 return
         print(f"No se encontró al mesero con nombre {nombre_mesero}.")
 
-    def mostrar_horarios(self):
+    def generar_horarios(self):
         dias_semana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
+        horas_maximas_semana = 48
         for dia in dias_semana:
             print(f"\nHorarios para el día {dia}:")
             for mesero in self.meseros:
                 if mesero.tiene_dia_descanso_personalizado(dia):
                     print(f"{mesero.nombre} - Descanso")
                 else:
-                    print(f"{mesero.nombre}:")
-                    print(" - ".join(generar_turnos()))
+                    horas_trabajadas_semana = sum(mesero.horas_trabajadas.values())
+                    if horas_trabajadas_semana < horas_maximas_semana:
+                        turno = self.asignar_turno_normal()
+                        print(f"{mesero.nombre}: {turno}")
+                        mesero.incrementar_horas_trabajadas(dia, turno)
+                    else:
+                        print(f"{mesero.nombre} - Descanso adicional obligatorio")
+                        mesero.incrementar_horas_trabajadas(dia, "Descanso adicional")
+                        mesero.reiniciar_horas_trabajadas()
 
+    def asignar_turno_normal(self) -> str:
+        turnos = [
+            "11:00 am - 18:00 pm",
+            "11:00 am - 15:00 pm - 18:00 pm - cierre",
+            "12:00 pm - 15:00 pm - 18:00 pm - cierre",
+            "12:00 pm - cierre"
+        ]
+        return turnos[0]
 
-def generar_turnos() -> list:
-    return [
-        "11:00 am - 18:00 pm",
-        "11:00 am - 15:00 pm - 18:00 pm - cierre",
-        "12:00 pm - 15:00 pm - 18:00 pm - cierre",
-        "12:00 pm - cierre"
-    ]
+class Mesero:
+    def __init__(self, nombre: str):
+        self.nombre = nombre
+        self.dia_descanso_personalizado = None
+        self.horas_trabajadas = {dia: 0 for dia in ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]}
+
+    def asignar_descanso_personalizado(self, dia_descanso: str):
+        self.dia_descanso_personalizado = dia_descanso
+
+    def tiene_dia_descanso_personalizado(self, dia: str):
+        return self.dia_descanso_personalizado == dia
+
+    def incrementar_horas_trabajadas(self, dia: str, turno: str):
+
+        horas_turno = turno.count("-") + 1
+        self.horas_trabajadas[dia] += horas_turno
+
+    def reiniciar_horas_trabajadas(self):
+        self.horas_trabajadas = {dia: 0 for dia in self.horas_trabajadas}
 
 
 # Ejemplos de uso
