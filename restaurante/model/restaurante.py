@@ -1,4 +1,4 @@
-from mesero import Mesero
+from restaurante.model.mesero import Mesero
 
 
 class Restaurante:

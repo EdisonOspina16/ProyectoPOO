@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bf51d28-fc29-4602-9687-ff867084f4de" name="Changes" comment="leame">
-      <change afterPath="$PROJECT_DIR$/restaurante/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurante/model/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurante/model/mesero.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurante/view/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurante/view/console.py" afterDir="false" />
+    <list default="true" id="0bf51d28-fc29-4602-9687-ff867084f4de" name="Changes" comment="complemento">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Restaurante/Restaurante.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/model/restaurante.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Restaurante/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/model/restaurante.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/model/restaurante.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711652231492</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="complemento">
+      <option name="closed" value="true" />
+      <created>1712291771688</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712291771688</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -241,7 +243,8 @@
     <MESSAGE value="implementacion horario" />
     <MESSAGE value="arreglos" />
     <MESSAGE value="leame" />
-    <option name="LAST_COMMIT_MESSAGE" value="leame" />
+    <MESSAGE value="complemento" />
+    <option name="LAST_COMMIT_MESSAGE" value="complemento" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
