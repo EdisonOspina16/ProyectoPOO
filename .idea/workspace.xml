@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bf51d28-fc29-4602-9687-ff867084f4de" name="Changes" comment="complemento">
+    <list default="true" id="0bf51d28-fc29-4602-9687-ff867084f4de" name="Changes" comment="maldito error">
+      <change afterPath="$PROJECT_DIR$/restaurante/model/entradaYsalida.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurante/model/restaurante.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/model/restaurante.py" afterDir="false" />
     </list>
@@ -23,18 +24,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "EdisonOspina16"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;EdisonOspina16&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/EdisonOspina16/Restaurante.git",
-    "accountId": "a25c5c33-da3f-4f5c-88a1-335e364afbf7"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/EdisonOspina16/Restaurante.git&quot;,
+    &quot;accountId&quot;: &quot;a25c5c33-da3f-4f5c-88a1-335e364afbf7&quot;
   }
-}]]></component>
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -47,17 +48,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Restaurante (1).executor": "Run",
-    "Python.Restaurante.executor": "Run",
-    "Python.app.executor": "Run",
-    "Python.console.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Restaurante (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.Restaurante.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.console.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\USER\PycharmProjects\Restaurante\Restaurante\model" />
@@ -233,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712291771688</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="maldito error">
+      <option name="closed" value="true" />
+      <created>1712293833894</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712293833894</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -244,7 +253,8 @@
     <MESSAGE value="arreglos" />
     <MESSAGE value="leame" />
     <MESSAGE value="complemento" />
-    <option name="LAST_COMMIT_MESSAGE" value="complemento" />
+    <MESSAGE value="maldito error" />
+    <option name="LAST_COMMIT_MESSAGE" value="maldito error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

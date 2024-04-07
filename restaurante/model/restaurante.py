@@ -47,15 +47,25 @@ class Restaurante:
         return turnos[0]
 
 
-"""
-# Ejemplos de uso
-restaurante = restaurante()
-restaurante.agregar_mesero("Edison", "123456")
-restaurante.agregar_mesero("Alejandro", "987654")
 
-# Asignación de descanso personalizado
-restaurante.asignar_descanso_personalizado("Edison", "Viernes")
-restaurante.asignar_descanso_personalizado("Alejandro", "Miércoles")
+    def consultar_agenda(self):
+            pass
+        # Lógica para consultar la agenda del restaurante
 
-# Mostrar horarios
-restaurante.generar_horarios()"""
+    def notificar_mesero(self, mesero, mensaje):
+        pass
+        # Lógica para notificar a un mesero
+
+    def calcular_salario(self, mesero):
+        pass
+        # Lógica para calcular el salario de un mesero
+
+    def calcular_horas_trabajadas(self, mesero):
+        pass
+        # Lógica para calcular las horas trabajadas por un mesero
+
+    def evaluar_desempenio(self, mesero):
+        pass
+        # Lógica para evaluar el desempeño de un mesero
+
+
