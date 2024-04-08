@@ -1,4 +1,4 @@
-class CheckingYChekaut:
+class Registro:
 
     def registrar_ingreso(self):
         pass
