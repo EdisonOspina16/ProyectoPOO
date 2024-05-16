@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bf51d28-fc29-4602-9687-ff867084f4de" name="Changes" comment="arreglitos finales">
-      <change afterPath="$PROJECT_DIR$/restaurante/model/evaluadordesempeño.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurante/model/gestorhorarios.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurante/model/notificador.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/model/mesero.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/model/mesero.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/model/registro.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/model/registroasistencia.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurante/model/restaurante.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/model/restaurante.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurante/view/console.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/view/console.py" afterDir="false" />
     </list>
@@ -69,7 +65,7 @@
       <recent name="C:\Users\USER\PycharmProjects\Restaurante\Restaurante\model" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.app">
+  <component name="RunManager" selected="Python.console (1)">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Restaurante" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -178,8 +174,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.app" />
         <item itemvalue="Python.console (1)" />
+        <item itemvalue="Python.app" />
         <item itemvalue="Python.console" />
         <item itemvalue="Python.restaurante" />
         <item itemvalue="Python.restaurante" />
@@ -289,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715824653447</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="arreglitos finales">
+      <created>1715874555585</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715874555585</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
