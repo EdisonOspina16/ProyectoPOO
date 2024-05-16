@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bf51d28-fc29-4602-9687-ff867084f4de" name="Changes" comment="arreglitos finales">
+      <change afterPath="$PROJECT_DIR$/restaurante/model/excepciones.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Restaurante.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Restaurante.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/model/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/model/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/model/mesero.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/model/mesero.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/model/registro.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/model/registro.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/model/restaurante.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/model/restaurante.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +72,6 @@
   <component name="RunManager" selected="Python.app">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Restaurante" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -88,7 +93,6 @@
     </configuration>
     <configuration name="console" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Restaurante" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -110,7 +114,6 @@
     </configuration>
     <configuration name="restaurante" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Restaurante" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
