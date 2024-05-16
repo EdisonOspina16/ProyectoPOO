@@ -1,41 +1,60 @@
+import tkinter as tk
+from tkinter import messagebox
 from restaurante.model.restaurante import Restaurante
+from restaurante.model.excepciones import MeseroExistenteError, AgendaNoDisponibleError, NotificacionError
+from tkinter import simpledialog
 
 
 class UIConsola:
     def __init__(self):
         self.restaurante = Restaurante()
+        self.ventana = tk.Tk()
+        self.ventana.title("Sistema de Gestión de Restaurantes")
+
+        self.label_bienvenida = tk.Label(self.ventana, text="Bienvenido al sistema de gestión de restaurantes.",
+                                         font=("Arial", 12))
+        self.label_bienvenida.pack(pady=10)
+
+        self.boton_agregar_mesero = tk.Button(self.ventana, text="Agregar Mesero", command=self.agregar_mesero)
+        self.boton_agregar_mesero.pack(pady=5)
+
+        self.boton_asignar_descanso = tk.Button(self.ventana, text="Asignar Día de Descanso",
+                                                command=self.asignar_descanso)
+        self.boton_asignar_descanso.pack(pady=5)
+
+        self.boton_generar_horarios = tk.Button(self.ventana, text="Generar Horarios", command=self.generar_horarios)
+        self.boton_generar_horarios.pack(pady=5)
+
+        self.boton_salir = tk.Button(self.ventana, text="Salir", command=self.ventana.quit)
+        self.boton_salir.pack(pady=5)
+
+    def agregar_mesero(self):
+        nombre = tk.simpledialog.askstring("Agregar Mesero", "Ingrese el nombre del mesero:")
+        telefono = tk.simpledialog.askstring("Agregar Mesero", "Ingrese el teléfono del mesero:")
+        try:
+            self.restaurante.agregar_mesero(nombre, telefono)
+            messagebox.showinfo("Éxito", "Mesero agregado exitosamente.")
+        except MeseroExistenteError as e:
+            messagebox.showerror("Error", e.obtener_mensaje())
+
+    def asignar_descanso(self):
+        nombre_mesero = tk.simpledialog.askstring("Asignar Día de Descanso", "Ingrese el nombre del mesero:")
+        dia_descanso = tk.simpledialog.askstring("Asignar Día de Descanso", "Ingrese el día de descanso:")
+        try:
+            mensaje = self.restaurante.asignar_descanso_personalizado(nombre_mesero, dia_descanso)
+            messagebox.showinfo("Éxito", mensaje)
+        except (MeseroExistenteError, AgendaNoDisponibleError, NotificacionError) as e:
+            messagebox.showerror("Error", e.obtener_mensaje())
+
+    def generar_horarios(self):
+        horarios_generados = self.restaurante.generar_horarios()
+        horarios_str = "\n".join(horarios_generados)
+        messagebox.showinfo("Horarios Generados", horarios_str)
 
     def ejecutar_app(self):
-        while True:
-            print("\nBienvenido al sistema de gestión de restaurantes.")
-            print("Seleccione una opción:")
-            print("1. Agregar mesero")
-            print("2. Asignar día de descanso personalizado a un mesero")
-            print("3. Generar horarios")
-            print("4. Salir")
+        self.ventana.mainloop()
 
-            opcion = input("Ingrese el número de la opción deseada: ")
 
-            if opcion == "1":
-                nombre = input("Ingrese el nombre del mesero: ")
-                telefono = input("Ingrese el teléfono del mesero: ")
-                self.restaurante.agregar_mesero(nombre, telefono)
-                print("Mesero agregado exitosamente.")
-
-            elif opcion == "2":
-                nombre_mesero = input("Ingrese el nombre del mesero al que desea asignar el día de descanso: ")
-                dia_descanso = input("Ingrese el día de descanso personalizado para el mesero: ")
-                mensaje = self.restaurante.asignar_descanso_personalizado(nombre_mesero, dia_descanso)
-                print(mensaje)
-
-            elif opcion == "3":
-                horarios_generados = self.restaurante.generar_horarios()
-                for horario in horarios_generados:
-                    print(horario)
-
-            elif opcion == "4":
-                print("Gracias por usar el sistema de gestión de restaurantes. ¡Hasta luego!")
-                break
-
-            else:
-                print("Opción inválida. Por favor, seleccione una opción válida.")
+if __name__ == "__main__":
+    interfaz = UIConsola()
+    interfaz.ejecutar_app()
