@@ -72,7 +72,6 @@ class Restaurante:
     def calcular_salario(self, mesero):
         if mesero not in self.meseros:
             raise ValueError("El mesero no está registrado en el restaurante")
-        # Aquí iría la lógica para calcular el salario de un mesero
         salario_base = 940.099
         horas_trabajadas = self.calcular_horas_trabajadas(mesero)
         salario_total = salario_base + (horas_trabajadas * 10)  # Suponiendo $10 por hora trabajada
@@ -86,7 +85,6 @@ class Restaurante:
     def evaluar_desempeño(self, mesero):
         if mesero not in self.meseros:
             raise ValueError("El mesero no está registrado en el restaurante")
-        # Aquí iría la lógica para evaluar el desempeño de un mesero
         horas_trabajadas = self.calcular_horas_trabajadas(mesero)
         if horas_trabajadas > 40:
             return "Excelente desempeño"
