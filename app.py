@@ -1,5 +1,7 @@
-from restaurante.view.UIConsola import UIConsola
+import tkinter as tk
+from restaurante.view.Tkinter_Interfaz import Aplicacion
 
 if __name__ == "__main__":
-    consola = UIConsola()
-    consola.ejecutar_app()
+    root = tk.Tk()
+    app = Aplicacion(root)
+    root.mainloop()

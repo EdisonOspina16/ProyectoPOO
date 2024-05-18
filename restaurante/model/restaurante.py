@@ -2,12 +2,15 @@ import os
 import pickle
 from .mesero import Mesero
 from .excepciones import MeseroExistenteError, AgendaNoDisponibleError
+from .gestorhorarios import GestorHorarios
+
 
 class Restaurante:
     def __init__(self):
         self.meseros = []
         self.carpeta_datos = "restaurante"
         self.archivo_meseros = os.path.join(self.carpeta_datos, "meseros.dat")
+        self.gestor_horarios = GestorHorarios()  # Inicializar el gestor de horarios
 
         # Crear la carpeta de datos si no existe
         if not os.path.exists(self.carpeta_datos):
