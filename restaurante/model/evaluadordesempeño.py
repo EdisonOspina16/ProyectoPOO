@@ -1,8 +1,6 @@
 class EvaluadorDesempeño:
-    def __init__(self):
-        pass
-
-    def evaluar_desempeño(self, mesero, criterios):
+    @staticmethod
+    def evaluar_desempeño(mesero):
         horas_trabajadas = mesero.calcular_horas_trabajadas()
         if horas_trabajadas > 40:
             return "Excelente desempeño"
@@ -10,3 +8,5 @@ class EvaluadorDesempeño:
             return "Buen desempeño"
         else:
             return "Desempeño regular"
+
+

@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bf51d28-fc29-4602-9687-ff867084f4de" name="Changes" comment="arreglitos finales">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Restaurante.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Restaurante.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="0bf51d28-fc29-4602-9687-ff867084f4de" name="Changes" comment="interfazzz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/model/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/model/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/meseros.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/model/evaluadordesempeño.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/model/evaluadordesempeño.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/model/gestorhorarios.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/model/gestorhorarios.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/model/mesero.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/model/mesero.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/model/notificador.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/model/notificador.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/model/registroasistencia.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/model/registroasistencia.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurante/model/restaurante.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/model/restaurante.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurante/view/UIConsola.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/view/Tkinter_Interfaz.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurante/view/Tkinter_Interfaz.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurante/view/Tkinter_Interfaz.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,14 +38,20 @@
     &quot;assignee&quot;: &quot;EdisonOspina16&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/EdisonOspina16/ProyectoPOO.git",
-    "accountId": "a25c5c33-da3f-4f5c-88a1-335e364afbf7"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/EdisonOspina16/ProyectoPOO.git&quot;,
+    &quot;accountId&quot;: &quot;a25c5c33-da3f-4f5c-88a1-335e364afbf7&quot;
   }
-}]]></component>
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/restaurante/model/excepciones.py" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -57,12 +66,14 @@
   "keyToString": {
     "Python.Restaurante (1).executor": "Run",
     "Python.Restaurante.executor": "Run",
-    "Python.Tkinter_Interfaz.executor": "Debug",
+    "Python.Tkinter_Interfaz.executor": "Run",
+    "Python.__init__.executor": "Run",
     "Python.app.executor": "Run",
     "Python.console.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "run.code.analysis.last.selected.profile": "aDefault",
     "settings.editor.selected.configurable": "preferences.fileTypes"
   }
 }]]></component>
@@ -138,6 +149,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Restaurante" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/AppData/Local/Programs/Python/Python312/Lib/tkinter" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/AppData/Local/Programs/Python/Python312/Lib/tkinter/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Restaurante" />
       <option name="ENV_FILES" value="" />
@@ -160,57 +193,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="console" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Restaurante" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Restaurante/view" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Restaurante/view/console.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="restaurante" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Restaurante" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Restaurante/model" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\USER\PycharmProjects\Restaurante\Restaurante\model\restaurante.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.app" />
+        <item itemvalue="Python.__init__" />
         <item itemvalue="Python.Tkinter_Interfaz" />
         <item itemvalue="Python.UIConsola (1)" />
         <item itemvalue="Python.UIConsola" />
-        <item itemvalue="Python.console" />
       </list>
     </recent_temporary>
   </component>
@@ -324,7 +313,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715874555585</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="arreglitos finales">
+      <option name="closed" value="true" />
+      <created>1716051295384</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1716051295384</updated>
+    </task>
+    <task id="LOCAL-00014" summary="interfazzz">
+      <option name="closed" value="true" />
+      <created>1716051317546</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1716051317546</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -338,7 +343,8 @@
     <MESSAGE value="maldito error" />
     <MESSAGE value="pa enviar" />
     <MESSAGE value="arreglitos finales" />
-    <option name="LAST_COMMIT_MESSAGE" value="arreglitos finales" />
+    <MESSAGE value="interfazzz" />
+    <option name="LAST_COMMIT_MESSAGE" value="interfazzz" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
